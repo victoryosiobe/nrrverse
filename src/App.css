@@ -2,7 +2,7 @@
   margin: 0;
 }
 body {
-  @apply bg-gray-900;
+  @apply bg-gray-50 dark:bg-gray-900;
   font-family: "Varela Round";
   user-select: none;
   margin-top: 5rem !important;

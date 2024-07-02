@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import Elements from "./pages/elements/Elements";
 import Display from "./pages/display/Display";
 import Info from "./pages/info/Info";
+import Page404 from "./pages/page404/Page404";
 import "./App.css";
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
         <Route exact path="/elements" element={<Elements />} />
         <Route exact path="/display" element={<Display />} />
         <Route exact path="/info" element={<Info />} />
+        <Route exact path="*" element={<Page404 />} />
         {/*<Route exact path="/" element={<Home />} />
-        <Route exact path="/" element={<Home />} />
         <Route exact path="/" element={<Home />} />*/}
       </Routes>
       <Footer />
