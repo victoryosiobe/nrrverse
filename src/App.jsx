@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToAnchor from "./components/ScrollToAnchor";
 import Home from "./pages/home/Home";
 import Elements from "./pages/elements/Elements";
 import Display from "./pages/display/Display";
@@ -11,6 +12,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
+      <ScrollToAnchor />
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
