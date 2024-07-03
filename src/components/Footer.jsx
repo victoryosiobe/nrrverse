@@ -10,8 +10,6 @@ const Footer = () => (
         <FootPinch label="about" href="#" />
         <FootPinch label="privacy policy" href="#" />
         <FootPinch label="terms & conditions" href="#" />
-        <FootPinch label="pricing" href="#" />
-        <FootPinch label="APIs" href="#" />
       </div>
     </div>
   </footer>
