@@ -36,7 +36,13 @@ function Main() {
       <div className="max-w-screen-xl mx-auto overflow-x-auto grid grid-flow-col-dense justify-items-center gap-5 no-scrollbar my-5 px-5">
         {catList()}
       </div>
-      <div className="py-96 mt-96 text-white text-center font-bold">layout</div>
+      <div
+        className="py-96 mt-96 text-gray-900 
+
+        dark:text-white text-center font-bold"
+      >
+        layout
+      </div>
     </section>
   );
 }
