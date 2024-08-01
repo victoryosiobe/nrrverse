@@ -33,7 +33,7 @@ const Hero = () => (
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           <div className="flex flex-col items-center bg-white text-white bg-opacity-10 p-4 rounded-lg backdrop-blur">
             <AdjustmentsHorizontalIcon className="h-10 w-10 m-3" />
-            <h3 className="text-l font-bold m-3 mb-2">Easy Customization</h3>
+            <h3 className="text-lg font-bold m-3 mb-2">Easy Customization</h3>
             <p className="text-sm m-3 mt-0">
               All templates you find, are very easy to customize to fit your
               needs.
@@ -41,7 +41,7 @@ const Hero = () => (
           </div>
           <div className="flex flex-col items-center bg-white text-white bg-opacity-20 p-4 rounded-lg backdrop-blur">
             <ArrowsPointingOutIcon className="h-10 w-10 m-3 sm:m-4" />
-            <h3 className="text-l font-bold m-3 mb-2 sm:m-4 sm:mb-2">
+            <h3 className="text-lg font-bold m-3 mb-2 sm:m-4 sm:mb-2">
               Responsive Design
             </h3>
             <p className="text-sm m-3 mt-0 sm:m-4 sm:mt-0">
@@ -51,7 +51,7 @@ const Hero = () => (
           </div>
           <div className="flex flex-col items-center bg-white text-white bg-opacity-10 p-4 rounded-lg backdrop-blur">
             <SparklesIcon className="h-10 w-10 m-3" />
-            <h3 className="text-l font-bold m-3 mb-2">High Quality</h3>
+            <h3 className="text-lg font-bold m-3 mb-2">High Quality</h3>
             <p className="text-sm m-3 mt-0">
               Templates are designed with the latest trends and standards in
               mind.

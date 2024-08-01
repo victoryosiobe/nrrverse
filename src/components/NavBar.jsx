@@ -13,7 +13,7 @@ const NavBar = () => {
     if (supressIds) supressIds.map((v) => supressFn(v));
 
     function supressFn(id) {
-      document.getElementById(id).classList.toggle("-z-[10]");
+      document.getElementById(id).classList.toggle("z-[2]");
     } //navbar needs to be at top always, but we dont need that sometimes, and we have issues with z-index parents
     //where if a parent having z-index has a child with any z-index will fail to be at top, because it is limited by it's parent's z-index
     //so it may be higher than others in same parent, but outside the parent, if an elment has a higher z-index than the parent, then it becomes over the parent and all it's children
