@@ -1,9 +1,8 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-{
   "headers": [
     {
-      "source": "/display/(.+)/(.+)/(\d+)",
+      "source": "/display/(.+)/(.+)/(d+)",
       "headers": [
         {
           "key": "X-Frame-Options",
@@ -16,5 +15,4 @@
       ]
     }
   ]
-}
 }
