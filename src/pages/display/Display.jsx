@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import data from "../../data/template";
 import DangerousComp from "../../components/DangerousComp";
 const Display = () => {
-  const { username, name, index } = useParams();
+  const { username, name, pass } = useParams();
   let code;
   for (let key in data) {
     if (key === username) {

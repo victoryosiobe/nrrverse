@@ -11,7 +11,7 @@ const data = {
         guide: "You can just place it in your html without no issues.",
       },
       Blueds: {
-        code: `<div class="p-3 h-[36rem] bg-pink-600">Hi there</div>`,
+        code: `<div class="p-3 h-[50rem] bg-pink-600">Hi there</div>`,
         category: "buttons",
         stack: ["HTML", "tailwind"],
         keywords: ["Button", "Blue Button"],

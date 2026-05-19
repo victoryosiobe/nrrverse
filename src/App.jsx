@@ -22,26 +22,34 @@ function Appx() {
   const xPaths = ["/display"]; // Example: pages where Footer is excluded
   // Determine if Navbar and Footer should be shown
   standAlone = xPaths.some((v) => location.pathname.startsWith(v));
-
-  return (
-    <>
-      <ScrollToAnchor />
-      {!standAlone && <NavBar />}
-      <Routes>
-        <Route exact index path="/" element={<Home />} />
-        <Route exact path="/elements" element={<Elements />} />
-        <Route exact path="/info" element={<Info />} />
-        <Route
-          exact
-          path="/display/:username/:name/:index"
-          element={<Display />}
-        />
-        <Route exact path="*" element={<Page404 />} />
-        {/*<Route exact path="/" element={<Home />} />*/}
-      </Routes>
-      {!standAlone && <Footer />}
-    </>
-  );
+  if (standAlone === true) {
+    return (
+      <>
+        <Routes>
+          <Route
+            exact
+            path="/display/:username/:name/:index"
+            element={<Display />}
+          />
+        </Routes>
+      </>
+    );
+  } else {
+    return (
+      <section id="base">
+        <ScrollToAnchor />
+        <NavBar />
+        <Routes>
+          <Route exact index path="/" element={<Home />} />
+          <Route exact path="/elements" element={<Elements />} />
+          <Route exact path="/info" element={<Info />} />
+          <Route exact path="*" element={<Page404 />} />
+          {/*<Route exact path="/" element={<Home />} />*/}
+        </Routes>
+        <Footer />
+      </section>
+    );
+  }
 }
 const App = () => (
   <Router>

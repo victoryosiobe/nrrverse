@@ -1,7 +1,7 @@
 :root {
   margin: 0;
 }
-body {
+#base {
   @apply bg-gray-50 dark:bg-gray-900;
   font-family: "Varela Round";
   user-select: none;

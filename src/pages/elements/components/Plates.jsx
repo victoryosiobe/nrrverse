@@ -1,9 +1,10 @@
 import DangerousComp from "../../../components/DangerousComp";
 const Plates = ({ data }) => (
-  <div className="w-fit-content m-5 p-5 border shadow-lg rounded-lg">
+  <div className="w-fit-content border shadow-lg rounded-lg">
     <div className="over-flow-y">
-      <iframe src={data.link} className="h-[100em]"></iframe>
+      <iframe src={data.link} className=""></iframe>
     </div>
+    <div className="border my-1"></div>
     <div className="text-2xl text-left font-extrabold uppercase">
       {data.name}
     </div>

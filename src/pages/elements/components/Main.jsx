@@ -37,6 +37,7 @@ function listEr(d, username) {
   if (dElL > 1) {
     for (let j = 0; j < dElL; j++) core(dEl[keys[j]], keys[j], username, j);
   } else core(dEl[keys[0]], keys[0], 0);
+
   function core(el, name, username, index) {
     list.push({
       username: username,
@@ -60,6 +61,7 @@ function elemList() {
   const accum = [];
   console.log(list, "perfect");
   for (let k = 0; k < list.length; k++) accum.push(<Plates data={list[k]} />);
+  accum.push(accum);
   return accum;
 }
 console.log(elemList(), "sup");
@@ -82,7 +84,7 @@ function Main() {
       <div className="max-w-screen-xl mx-auto overflow-x-auto grid grid-flow-col-dense justify-items-center gap-5 no-scrollbar my-5 px-5">
         {catList()}
       </div>
-      <div className="py-2 flex flex-row flex-wrap gap-5 justify-center dark:text-white">
+      <div className="flex flex-row flex-wrap gap-5 justify-evenly dark:text-white">
         {elemList()}
       </div>
     </section>
